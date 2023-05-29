@@ -1,0 +1,31 @@
+{
+  "name": "storyblok-tres",
+  "private": true,
+  "author": "Alvaro Saburido <alvaro.saburido@storyblok.com> (https://github.com/alvarosabu/)",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@alvarosabu/prettier-config": "^1.3.0",
+    "@nuxt/content": "^2.6.0",
+    "@nuxt/image-edge": "1.0.0-28088649.74a91bd",
+    "@types/node": "^18",
+    "@unocss/nuxt": "^0.52.4",
+    "nuxt": "^3.5.1",
+    "nuxt-svgo": "^3.1.0",
+    "vite-plugin-svg": "^0.7.0"
+  },
+  "dependencies": {
+    "@storyblok/design-system": "^3.11.2",
+    "@storyblok/nuxt": "^5.4.7",
+    "@tresjs/cientos": "^2.1.2",
+    "@tresjs/core": "^2.1.2",
+    "@tresjs/leches": "^0.3.0",
+    "three": "^0.152.2",
+    "unocss": "^0.52.4"
+  }
+}
