@@ -1,26 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { presetUno, presetIcons, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { presetDaisy } from 'unocss-preset-daisy'
 import svgPlugin from 'vite-plugin-svg'
 
 export default defineNuxtConfig({
-  ssr: false,
-  modules: ['@unocss/nuxt', ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_TOKEN }]],
+  modules: ['@tresjs/nuxt', '@unocss/nuxt', ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_TOKEN }]],
+  css: ['@unocss/reset/tailwind.css', '@tresjs/leches/styles'],
   unocss: {
-    // presets
-    uno: true, // enabled `@unocss/preset-uno`
-    icons: true, // enabled `@unocss/preset-icons`
-    attributify: true, // enabled `@unocss/preset-attributify`,
-
-    theme: {
-      colors: {
-        brand: {
-          primary: '#00B3B0',
-          secondary: '#1B243F',
-        },
+    presets: [presetUno(), presetIcons({
+      scale: 1.2,
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle',
+        // ...
       },
-    },
-
-    // core options
-    shortcuts: [],
+    }), presetDaisy() ],
+    transformers: [transformerDirectives(), transformerVariantGroup()],
   },
   vite: {
     plugins: [svgPlugin()],
