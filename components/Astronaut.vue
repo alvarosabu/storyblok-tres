@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { MeshStandardMaterial } from 'three'
 
-const { nodes, animations } = await useGLTF('/models/astronaut.glb', { draco: true })
+const { nodes, animations } = await useGLTF('/models/astronaut-storyblok.glb', { draco: true })
 
 const astronaut = nodes['Astronaut']
 

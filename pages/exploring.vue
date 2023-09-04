@@ -83,15 +83,15 @@ watch(progress, (value) => {
       :smooth-scroll="0.1"
       html-scroll
     >
-      <Suspense>
-        <Levioso
-          :speed="0.1"
-          :float-factor="0.01"
-          :range="[-0.1, 0.1]"
-        >
+      <Levioso
+        :speed="0.1"
+        :float-factor="0.01"
+        :range="[-0.1, 0.1]"
+      >
+        <Suspense>
           <Astronaut />
-        </Levioso>
-      </Suspense>
+        </Suspense>
+      </Levioso>
     </ScrollControls>
     <Suspense>
       <Moon :progress="progress" />

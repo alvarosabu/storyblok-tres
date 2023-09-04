@@ -39,15 +39,15 @@ const progress = ref(0)
       <Moon />
     </Suspense>
     <Stars />
-    <Suspense>
-      <Levioso
-        :speed="0.1"
-        :float-factor="0.01"
-        :range="[-0.1, 0.1]"
-      >
+    <Levioso
+      :speed="0.1"
+      :float-factor="0.01"
+      :range="[-0.1, 0.1]"
+    >
+      <Suspense>
         <Astronaut />
-      </Levioso>
-    </Suspense>
+      </Suspense>
+    </Levioso>
     <TresAmbientLight :intensity="2" />
     <TresDirectionalLight
       :position="[-4, -2, 2]"
