@@ -74,7 +74,7 @@ watchEffect(() => {
 
 watch(progress, (value) => {
   if (value >= 0.65) {
-    rocketRef.value.rotation.x = lerp(0, Math.PI, (value - 0.65) * 15)
+    rocketRef.value.rotation.x = lerp(0, Math.PI + Math.PI / 2, (value - 0.65) * 15)
   }
   if (value >= 0.72) {
     rocketRef.value.position.x = lerp(20, 40, (value - 0.72) * 11)

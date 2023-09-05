@@ -51,7 +51,6 @@ const unwatch = watch(moonRocketRef, (value) => {
 })
 
 watch(progress, (value) => {
-  console.log(value)
   if (value >= 0.40) {
     const t = (progress.value - 0.40) * 4 // Normalize progress from 0.5 to 1 to range 0 to 1
     cameraRef.value.position.x = lerp(0, 15, t * t) // Smoothly interpolate from -0.5 to 1 based on t
@@ -103,6 +102,9 @@ watch(progress, (value) => {
         :rotation="rocketRotation"
         :progress="progress"
       />
+    </Suspense>
+    <Suspense>
+      <FrameworkPlanets />
     </Suspense>
     <Stars />
     <TresAmbientLight :intensity="2" />
