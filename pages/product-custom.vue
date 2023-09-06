@@ -130,7 +130,7 @@ function resetMaterials() {
         <TresAmbientLight :intensity="1" />
       </TresCanvas>
     </div>
-    <aside class="relative w-full sm:w-1/2 bg-dark prose p-16 h-full text-white">
+    <aside class="relative w-full sm:w-1/2 bg-dark prose p-16 h-full overflow-scroll text-white">
       <h1
         class=" font-bold text-2xl mb-12 w-full text-center"
       >
@@ -139,11 +139,11 @@ function resetMaterials() {
       <p class="text-gray-400 text-sm text-center">
         {{ story.content.description }}
       </p>
-      <section class="w-full flex items-center text-gray-300 mt-32 mb-16">
+      <section class="w-full flex items-start text-gray-300 mt-32 mb-16">
         <h2 class="text-gray-300 font-bold w-1/2 lg:w-1/3">
           Base Color
         </h2>
-        <ul class="flex list-none ml-0 pl-0">
+        <ul class="flex flex-wrap list-none justify-start w-1/2 lg:2/3 ml-0 pl-0">
           <li
             v-for="(material, index) in availableBaseMaterials"
             :key="index"
@@ -156,11 +156,11 @@ function resetMaterials() {
           </li>
         </ul>
       </section>
-      <section class="w-full flex items-center text-gray-300 mb-16">
+      <section class="w-full flex items-start text-gray-300 mb-16">
         <h2 class="text-gray-300 font-bold w-1/2 lg:w-1/3">
           Accent Color
         </h2>
-        <ul class="flex list-none ml-0 pl-0">
+        <ul class="flex flex-wrap list-none justify-start w-1/2 lg:2/3 ml-0 pl-0">
           <li
             v-for="(material, index) in availableAccentMaterials"
             :key="index"
@@ -173,11 +173,11 @@ function resetMaterials() {
           </li>
         </ul>
       </section>
-      <section class="w-full flex items-center text-gray-300 mb-16">
+      <section class="w-full flex items-start text-gray-300 mb-16">
         <h2 class="text-gray-300 font-bold w-1/2 lg:w-1/3">
           Detail Color
         </h2>
-        <ul class="flex list-none ml-0 pl-0">
+        <ul class="flex flex-wrap list-none justify-start w-1/2 lg:2/3 ml-0 pl-0">
           <li
             v-for="(material, index) in availableDetailMaterials"
             :key="index"
@@ -190,7 +190,7 @@ function resetMaterials() {
           </li>
         </ul>
       </section>
-      <footer class="flex justify-end gap-8 absolute bottom-0 left-0 w-full p-8">
+      <footer class="flex justify-end gap-8 w-full p-8">
         <button
           class="btn btn-outline btn-white text-white font-bold py-2 px-4 rounded"
           @click="resetMaterials"
