@@ -130,7 +130,7 @@ function resetMaterials() {
         <TresAmbientLight :intensity="1" />
       </TresCanvas>
     </div>
-    <aside class="relative w-full sm:w-1/2 bg-dark prose p-16 h-full overflow-scroll text-white">
+    <aside class="relative w-full sm:w-1/2 bg-dark prose p-8 sm:p-16 h-full overflow-scroll text-white">
       <h1
         class=" font-bold text-2xl mb-12 w-full text-center"
       >
@@ -190,7 +190,7 @@ function resetMaterials() {
           </li>
         </ul>
       </section>
-      <footer class="flex justify-end gap-8 w-full p-8">
+      <footer class="flex flex-col sm:flex-row justify-end gap-8 w-full p-0 sm:p-8">
         <button
           class="btn btn-outline btn-white text-white font-bold py-2 px-4 rounded"
           @click="resetMaterials"

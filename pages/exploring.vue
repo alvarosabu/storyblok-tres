@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { BasicShadowMap, SRGBColorSpace, NoToneMapping, Vector3, Euler } from 'three'
 import { Levioso, OrbitControls } from '@tresjs/cientos'
-import { interpolate } from '../utils/animation'
 
 const story = await useAsyncStoryblok(
   'exploring',
