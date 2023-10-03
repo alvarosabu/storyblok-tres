@@ -13,7 +13,7 @@
     "@alvarosabu/utils": "^3.1.1",
     "@marvr/storyblok-rich-text-vue-renderer": "^3.2.1",
     "@storyblok/design-system": "^3.15.1",
-    "@storyblok/nuxt": "^5.6.8",
+    "@storyblok/nuxt": "^5.6.13",
     "@tresjs/cientos": "3.2.1",
     "@tresjs/leches": "^0.8.0",
     "@tresjs/nuxt": "1.1.3",

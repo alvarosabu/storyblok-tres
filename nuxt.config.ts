@@ -6,6 +6,7 @@ import svgPlugin from 'vite-plugin-svg'
 export default defineNuxtConfig({
   modules: ['@tresjs/nuxt', '@unocss/nuxt', ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_TOKEN }]],
   css: ['@unocss/reset/tailwind.css', '@tresjs/leches/styles'],
+
   unocss: {
     presets: [presetUno(), presetIcons({
       scale: 1.2,
