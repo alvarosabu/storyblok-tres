@@ -16,7 +16,7 @@
     "@storyblok/nuxt": "^5.7.2",
     "@tresjs/cientos": "3.4.1",
     "@tresjs/leches": "^0.10.0",
-    "@tresjs/nuxt": "1.2.0-next.0",
+    "@tresjs/nuxt": "1.1.7",
     "daisyui": "^3.8.3",
     "three": "^0.157.0",
     "unocss": "^0.55.3",

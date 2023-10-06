@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.10.0
     version: 0.10.0(vue@3.3.4)
   '@tresjs/nuxt':
-    specifier: 1.2.0-next.0
-    version: 1.2.0-next.0(tweakpane@4.0.1)(vue@3.3.4)
+    specifier: 1.1.7
+    version: 1.1.7(tweakpane@4.0.1)(vue@3.3.4)
   daisyui:
     specifier: ^3.8.3
     version: 3.8.3
@@ -1847,18 +1847,17 @@ packages:
       '@storyblok/js': 2.3.0
     dev: false
 
-  /@tresjs/cientos@3.4.1(@tresjs/core@3.2.3)(three@0.156.1)(tweakpane@4.0.1)(vue@3.3.4):
-    resolution: {integrity: sha512-2WrhPzsKWdSk7WW1Yy9EjrCDk6sUj22K4P0ROUpLTsQDW3ymA7Ph+jOb4gy7n7D/Q8yXJmEcrz62yfyBBAj3AA==}
+  /@tresjs/cientos@3.3.0(@tresjs/core@3.2.2)(three@0.156.1)(tweakpane@4.0.1)(vue@3.3.4):
+    resolution: {integrity: sha512-C7sCcupSeML0qSVIg90rjayqjE6T6tcv6co6lUSqhY3RTLxMsureo7Dz1zzH8RMfssMPZD0bewVmbZMl1AbeLw==}
     peerDependencies:
       '@tresjs/core': '>=3.2'
       three: '>=0.133'
       tweakpane: '>=3.0.0'
       vue: '>=3.3'
     dependencies:
-      '@tresjs/core': 3.2.3(three@0.156.1)(vue@3.3.4)
+      '@tresjs/core': 3.2.2(three@0.156.1)(vue@3.3.4)
       '@vueuse/core': 10.4.1(vue@3.3.4)
       camera-controls: 2.7.2(three@0.156.1)
-      stats-gl: 1.0.5
       stats.js: 0.17.0
       three: 0.156.1
       three-stdlib: 2.25.0(three@0.156.1)
@@ -1889,8 +1888,8 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /@tresjs/core@3.2.3(three@0.156.1)(vue@3.3.4):
-    resolution: {integrity: sha512-3HSw152Hp0Xfjt/wE8gTMoOwvbQNppi8Sz3an3j9YXEEm7t66Eyf7L3EJXwWjRNqlhjv4F9Vof0FMqAuXifw1g==}
+  /@tresjs/core@3.2.2(three@0.156.1)(vue@3.3.4):
+    resolution: {integrity: sha512-zNh32siTJqk2JcnA8hZ8zPGkGvepNP03oCtlnUFl22BGULpQvehMWtMjYx233Gqoq5tiyUEcWeXxBSUHIEJjRg==}
     peerDependencies:
       three: '>=0.133'
       vue: '>=3.3'
@@ -1928,12 +1927,12 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /@tresjs/nuxt@1.2.0-next.0(tweakpane@4.0.1)(vue@3.3.4):
-    resolution: {integrity: sha512-ZpIf/4+k8trDz+l5frZ6bmXbwQahETW6C6B/Gv5Rq/8oZFS3+mUMXQDelRVsqJspem3WFv6PAVN4R+ofovtcOA==}
+  /@tresjs/nuxt@1.1.7(tweakpane@4.0.1)(vue@3.3.4):
+    resolution: {integrity: sha512-DduM34W2mspqNppSm26oWKEqvr7s8Dd5i13wh1CG3iMqrSMU2cduQqbs9CoUbAit+VaPzq2/32QbmPFR1oXo6w==}
     dependencies:
       '@nuxt/kit': 3.7.4
-      '@tresjs/cientos': 3.4.1(@tresjs/core@3.2.3)(three@0.156.1)(tweakpane@4.0.1)(vue@3.3.4)
-      '@tresjs/core': 3.2.3(three@0.156.1)(vue@3.3.4)
+      '@tresjs/cientos': 3.3.0(@tresjs/core@3.2.2)(three@0.156.1)(tweakpane@4.0.1)(vue@3.3.4)
+      '@tresjs/core': 3.2.2(three@0.156.1)(vue@3.3.4)
       '@types/three': 0.156.0
       mlly: 1.4.2
       pkg-types: 1.0.3
