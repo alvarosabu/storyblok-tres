@@ -20,6 +20,8 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [svgPlugin()],
-    optimizeDeps: { exclude: ['fsevents'] },
+    resolve: {
+      dedupe: ['three'],
+    },
   },
 })
