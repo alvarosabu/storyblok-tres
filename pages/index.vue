@@ -7,8 +7,6 @@ const story = await useAsyncStoryblok(
   /* { resolveRelations: 'car-configurator.model' }, */
 )
 
-console.log('token', process.env.STORYBLOK_TOKEN)
-
 const gl = {
   shadows: true,
   alpha: true,

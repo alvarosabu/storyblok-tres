@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     [
       '@storyblok/nuxt', { 
-        accessToken: process.env.STORYBLOK_TOKEN, 
+        accessToken: import.meta.env.STORYBLOK_TOKEN, 
       },
     ],
   ],
