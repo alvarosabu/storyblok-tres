@@ -8,6 +8,8 @@ const story = await useAsyncStoryblok(
   /* { resolveRelations: 'car-configurator.model' }, */
 )
 
+console.log('story', story.value.content)
+
 const gl = {
   shadows: true,
   alpha: true,

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { RichTextRenderer } from '@marvr/storyblok-rich-text-vue-renderer'
+import { SbRichText } from '@alvarosabu/storyblok-richtext-vue-renderer'
 
-defineProps({ blok: Object })
+const props = defineProps({ blok: Object })
 </script>
 
 <template>
@@ -11,7 +11,7 @@ defineProps({ blok: Object })
         {{ blok.title }}
       </h2>
       <p class="bg-dark rounded bg-opacity-80 sm:bg-transparent font-italic text-2xl">
-        <RichTextRenderer :document="blok.text" />
+        <SbRichText :doc="blok.text" />
       </p>
     </div>
   </section>

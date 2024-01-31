@@ -7,6 +7,8 @@ const story = await useAsyncStoryblok(
   /* { resolveRelations: 'car-configurator.model' }, */
 )
 
+console.log('token', process.env.STORYBLOK_TOKEN)
+
 const gl = {
   shadows: true,
   alpha: true,
@@ -25,41 +27,43 @@ const progress = ref(0)
     :blok="story.content"
   />
 
-  <TresCanvas
-    v-if="story.content"
-    v-bind="gl"
-    :clear-color="story.content.clearColor"
-    window-size
-  >
-    <TresPerspectiveCamera
-      :position="[0, 0, 15]"
-    />
-    <OrbitControls />
-    <Suspense>
-      <Moon />
-    </Suspense>
-    <Stars />
-    <Levioso
-      :speed="0.1"
-      :float-factor="0.01"
-      :range="[-0.1, 0.1]"
+  <ClientOnly>
+    <TresCanvas
+      v-if="story.content"
+      v-bind="gl"
+      :clear-color="story.content.clearColor"
+      window-size
     >
+      <TresPerspectiveCamera
+        :position="[0, 0, 15]"
+      />
+      <OrbitControls />
       <Suspense>
-        <Astronaut />
+        <Moon />
       </Suspense>
-    </Levioso>
-    <TresAmbientLight :intensity="2" />
-    <TresDirectionalLight
-      :position="[-4, -2, 2]"
-      :intensity="1"
-      cast-shadow
-      color="purple"
-    />
-    <TresDirectionalLight
-      :position="[4, 6, 4]"
-      :intensity="2"
-      cast-shadow
-      color="cyan"
-    />
-  </TresCanvas>
+      <Stars />
+      <Levioso
+        :speed="0.1"
+        :float-factor="0.01"
+        :range="[-0.1, 0.1]"
+      >
+        <Suspense>
+          <Astronaut />
+        </Suspense>
+      </Levioso>
+      <TresAmbientLight :intensity="2" />
+      <TresDirectionalLight
+        :position="[-4, -2, 2]"
+        :intensity="1"
+        cast-shadow
+        color="purple"
+      />
+      <TresDirectionalLight
+        :position="[4, 6, 4]"
+        :intensity="2"
+        cast-shadow
+        color="cyan"
+      />
+    </TresCanvas>
+  </ClientOnly>
 </template>
