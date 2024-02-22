@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Levioso } from '@tresjs/cientos'
-
 const { nodes: reactNodes } = await useGLTF('/models/react-planet.glb', { draco: true })
 const reactPlanet = reactNodes['ReactPlanet']
 
@@ -13,10 +11,12 @@ const sveltePlanet = svelteNodes['SveltePlanet']
 sveltePlanet.position.y = -3
 sveltePlanet.position.x = sveltePlanet.position.x - 2
 
-const { nodes: vueNodes } = await useGLTF('/models/vue-planet.glb', { draco: true })
-const vuePlanet = vueNodes['VuePlanet']
+const { scene: vuePlanet } = await useGLTF('/models/evan.glb', { draco: true })
 
 vuePlanet.position.y = 3.5
+vuePlanet.scale.set(0.75, 0.75, 0.75)
+vuePlanet.position.x = vuePlanet.position.x + 8
+vuePlanet.rotation.set(Math.PI / 12, -Math.PI / 6, 0)
 
 const { nodes: vrHeadsetNodes } = await useGLTF('/models/vr-headset.glb', { draco: true })
 const vrHeadset = vrHeadsetNodes['VRHeadset']
