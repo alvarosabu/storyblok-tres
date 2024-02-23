@@ -100,37 +100,35 @@ function resetMaterials() {
           </div>
         </div>
       </Transition>
-      <ClientOnly>
-        <TresCanvas
-          v-if="story"
-          v-bind="gl"
-        >
-          <TresPerspectiveCamera
-            ref="cameraRef"
-            :position="cameraPosition"
-          />
-          <OrbitControls />
-          <Suspense>
-            <RocketSetup />
-          </Suspense>
-          <Stars />
-          <TresAmbientLight :intensity="2" />
-          <TresDirectionalLight
-            :position="[-4, -2, 2]"
-            :intensity="1"
-            cast-shadow
-            color="purple"
-          />
-          <TresDirectionalLight
-            :position="[4, 6, 4]"
-            :intensity="2"
-            cast-shadow
-            color="cyan"
-          />
-          <TresGridHelper />
-          <TresAmbientLight :intensity="1" />
-        </TresCanvas>
-      </ClientOnly>
+      <TresCanvas
+        v-if="story"
+        v-bind="gl"
+      >
+        <TresPerspectiveCamera
+          ref="cameraRef"
+          :look-at="[0, 1, 0]"
+          :position="cameraPosition"
+        />
+        <Suspense>
+          <RocketSetup />
+        </Suspense>
+        <Stars />
+        <TresAmbientLight :intensity="2" />
+        <TresDirectionalLight
+          :position="[-4, -2, 2]"
+          :intensity="1"
+          cast-shadow
+          color="purple"
+        />
+        <TresDirectionalLight
+          :position="[4, 6, 4]"
+          :intensity="2"
+          cast-shadow
+          color="cyan"
+        />
+        <TresGridHelper />
+        <TresAmbientLight :intensity="1" />
+      </TresCanvas>
     </div>
     <aside class="relative w-full sm:w-1/2 bg-dark prose p-8 sm:p-16 h-full overflow-scroll text-white">
       <h1
