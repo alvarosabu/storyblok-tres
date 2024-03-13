@@ -1955,7 +1955,6 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
-      napi-wasm: 1.1.0
     bundledDependencies:
       - napi-wasm
 
@@ -2412,7 +2411,7 @@ packages:
       '@tresjs/core': 3.7.0_three@0.161.0
       '@vueuse/core': 10.9.0
       camera-controls: 2.8.3_three@0.161.0
-      stats-gl: 2.2.2
+      stats-gl: 2.2.6
       stats.js: 0.17.0
       three: 0.161.0
       three-custom-shader-material: 5.4.0_three@0.161.0
@@ -2945,49 +2944,49 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@unhead/dom/1.8.13:
-    resolution: {integrity: sha512-BWqtatmrcrT+rN/FBZ/Il7mW0TuPlS4bXrsZewAVanOPU3ahr+sHAIUDJmDjziBjSUsO5wLOEYXA+4t08AZnrQ==}
+  /@unhead/dom/1.8.15:
+    resolution: {integrity: sha512-jD7yty+Ex54r4jUvOaPBVYUgrWslUMbAzTlSjzzUrLDrfQKh4qGKf9P88sXlR3xIocmo032SuprcfCRGkE9cUg==}
     dependencies:
-      '@unhead/schema': 1.8.13
-      '@unhead/shared': 1.8.13
+      '@unhead/schema': 1.8.15
+      '@unhead/shared': 1.8.15
 
-  /@unhead/schema/1.8.13:
-    resolution: {integrity: sha512-38SMOv/RaTtldOJx2/Mezlg3xlMeAAFtyI+M7vwj8Qb0xAosRc804ct3Xta5ecFMe9bEXQbZWEIKydU6ZV6B7w==}
+  /@unhead/schema/1.8.15:
+    resolution: {integrity: sha512-jOFU1sIuor8EmPpAr0j+xslPOpST9LSGf1yYAS5uCPqDsn1mWKHHeOngS0H4Y6fRpPKv3tAZwR7TXeMfPRCXNQ==}
     dependencies:
       hookable: 5.5.3
       zhead: 2.2.4
 
-  /@unhead/shared/1.8.13:
-    resolution: {integrity: sha512-NV/quz31oqkITx+Epwzgf01AaYMPTzvkEdg9jvGltTWeSHWKtowUeTRPfWUc3TTPtCzrYgHQQjGN8YOHdWjC7Q==}
+  /@unhead/shared/1.8.15:
+    resolution: {integrity: sha512-z0RuuEd+3y9jgIRfFBcenrj8El3EG2ccJaUMJvJgqBNmsZzaEdqLm37/a3BvCAdbIZRpApePuihC0QXELcAXHQ==}
     dependencies:
-      '@unhead/schema': 1.8.13
+      '@unhead/schema': 1.8.15
 
-  /@unhead/ssr/1.8.13:
-    resolution: {integrity: sha512-4GzpVlwJn8HRa6YE+9UuABf3XSe1WvcqLOWszCJiD3oUaFCZ2jqrVXS4v/jhJ6bAm7LTHrfT7Znyw4nQG57/XQ==}
+  /@unhead/ssr/1.8.15:
+    resolution: {integrity: sha512-GMUS/EWuZUeuUKgZGUvZP4MRmqsb7kBmBvW+nm48e+fIvawN0qEJ/EgF1RpCS7dGArJs9hHPPoq4LozGNT1X7Q==}
     dependencies:
-      '@unhead/schema': 1.8.13
-      '@unhead/shared': 1.8.13
+      '@unhead/schema': 1.8.15
+      '@unhead/shared': 1.8.15
 
-  /@unhead/vue/1.8.13:
-    resolution: {integrity: sha512-2CIwSeadfJxFfY44nz7U+w/F7lg646aw2t8G58P4A08t6KtPRoAVA0cR0iX+yqQEZIAKYEoaNINv3p/GMxyvBw==}
+  /@unhead/vue/1.8.15:
+    resolution: {integrity: sha512-0/EW46gmxxUlSbOlQ00bxaeoyPM2hasXEjeOdfgjpKWhNh3pxaDEISUj73xg+4pFKTMN7nRr0d+/l0cjUPebBw==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/schema': 1.8.13
-      '@unhead/shared': 1.8.13
+      '@unhead/schema': 1.8.15
+      '@unhead/shared': 1.8.15
       hookable: 5.5.3
-      unhead: 1.8.13
+      unhead: 1.8.15
     dev: true
 
-  /@unhead/vue/1.8.13_vue@3.4.21:
-    resolution: {integrity: sha512-2CIwSeadfJxFfY44nz7U+w/F7lg646aw2t8G58P4A08t6KtPRoAVA0cR0iX+yqQEZIAKYEoaNINv3p/GMxyvBw==}
+  /@unhead/vue/1.8.15_vue@3.4.21:
+    resolution: {integrity: sha512-0/EW46gmxxUlSbOlQ00bxaeoyPM2hasXEjeOdfgjpKWhNh3pxaDEISUj73xg+4pFKTMN7nRr0d+/l0cjUPebBw==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/schema': 1.8.13
-      '@unhead/shared': 1.8.13
+      '@unhead/schema': 1.8.15
+      '@unhead/shared': 1.8.15
       hookable: 5.5.3
-      unhead: 1.8.13
+      unhead: 1.8.15
       vue: 3.4.21
 
   /@unocss/astro/0.58.5:
@@ -3417,10 +3416,10 @@ packages:
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/dom': 1.8.13
-      '@unhead/schema': 1.8.13
-      '@unhead/ssr': 1.8.13
-      '@unhead/vue': 1.8.13
+      '@unhead/dom': 1.8.15
+      '@unhead/schema': 1.8.15
+      '@unhead/ssr': 1.8.15
+      '@unhead/vue': 1.8.15
     dev: true
 
   /@vueuse/integrations/10.9.0_fuse.js@6.6.2:
@@ -3883,7 +3882,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001597
-      electron-to-chromium: 1.4.701
+      electron-to-chromium: 1.4.702
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13_browserslist@4.23.0
 
@@ -4735,8 +4734,8 @@ packages:
   /ee-first/1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  /electron-to-chromium/1.4.701:
-    resolution: {integrity: sha512-K3WPQ36bUOtXg/1+69bFlFOvdSm0/0bGqmsfPDLRXLanoKXdA+pIWuf/VbA9b+2CwBFuONgl4NEz4OEm+OJOKA==}
+  /electron-to-chromium/1.4.702:
+    resolution: {integrity: sha512-LYLXyEUsZ3nNSwiOWjI88N1PJUAMU2QphQSgGLVkFnb3FxZxNui2Vzi2PaKPgPWbsWbZstZnh6BMf/VQJamjiQ==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -7404,9 +7403,6 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     hasBin: true
 
-  /napi-wasm/1.1.0:
-    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
-
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
@@ -7471,7 +7467,7 @@ packages:
       node-fetch-native: 1.6.2
       ofetch: 1.3.3
       ohash: 1.1.3
-      openapi-typescript: 6.7.4
+      openapi-typescript: 6.7.5
       pathe: 1.1.2
       perfect-debounce: 1.0.0
       pkg-types: 1.0.3
@@ -7759,9 +7755,9 @@ packages:
       '@nuxt/ui-templates': 1.3.1
       '@nuxt/vite-builder': 3.10.3_nzo7257tv56dsnb23woisoem5a
       '@types/node': 20.11.26
-      '@unhead/dom': 1.8.13
-      '@unhead/ssr': 1.8.13
-      '@unhead/vue': 1.8.13_vue@3.4.21
+      '@unhead/dom': 1.8.15
+      '@unhead/ssr': 1.8.15
+      '@unhead/vue': 1.8.15_vue@3.4.21
       '@vue/shared': 3.4.21
       acorn: 8.11.3
       c12: 1.10.0
@@ -7987,8 +7983,8 @@ packages:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  /openapi-typescript/6.7.4:
-    resolution: {integrity: sha512-EZyeW9Wy7UDCKv0iYmKrq2pVZtquXiD/YHiUClAKqiMi42nodx/EQH11K6fLqjt1IZlJmVokrAsExsBMM2RROQ==}
+  /openapi-typescript/6.7.5:
+    resolution: {integrity: sha512-ZD6dgSZi0u1QCP55g8/2yS5hNJfIpgqsSGHLxxdOjvY7eIrXzj271FJEQw33VwsZ6RCtO/NOuhxa7GBWmEudyA==}
     hasBin: true
     dependencies:
       ansi-colors: 4.1.3
@@ -9392,8 +9388,8 @@ packages:
   /standard-as-callback/2.1.0:
     resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
 
-  /stats-gl/2.2.2:
-    resolution: {integrity: sha512-1RQSqf5fV/p0SDmfHVcIT8sgCxPv70KfviIdFIUYDGHWEsRtYxavP7JcMRSS50NKRgn4L81zxoOm6ejWwV/KiQ==}
+  /stats-gl/2.2.6:
+    resolution: {integrity: sha512-pRYLSqGwrZ29kISEIAPjio3wglnQBqhwtGzm4/+G/hEBDkV1jUAtIyJijFy8DhtfIp4R9GiGOtXxGmdQjWui7w==}
     dev: false
 
   /stats.js/0.17.0:
@@ -9978,12 +9974,12 @@ packages:
       node-fetch-native: 1.6.2
       pathe: 1.1.2
 
-  /unhead/1.8.13:
-    resolution: {integrity: sha512-VL1eOXc1U0zI6XO2JJQ98tywcEW9cM6tfrmuNcltOKSB7Xg3isVXFSf2bEbO4XPUjg8D5Uy3Q3Zi9cN9XSiTyA==}
+  /unhead/1.8.15:
+    resolution: {integrity: sha512-GwSiocRwTHwNDZxcHa1cjlklEHzk/hiSqNfaBCkDgNvX90EbLmRpmf/ykth36Uq4IAliIaTPwHDXYuUtqSDGoA==}
     dependencies:
-      '@unhead/dom': 1.8.13
-      '@unhead/schema': 1.8.13
-      '@unhead/shared': 1.8.13
+      '@unhead/dom': 1.8.15
+      '@unhead/schema': 1.8.15
+      '@unhead/shared': 1.8.15
       hookable: 5.5.3
 
   /unicode-emoji-modifier-base/1.0.0:
