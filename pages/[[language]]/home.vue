@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { BasicShadowMap, SRGBColorSpace, NoToneMapping, Vector3 } from 'three'
 
+const route = useRoute()
+
 const story = await useAsyncStoryblok(
   'home',
-  { version: 'draft', language: 'es' /* resolve_relations: 'car-configurator.model' */ },
+  { version: 'draft', language: route.params.language || 'en' /* resolve_relations: 'car-configurator.model' */ },
   /* { resolveRelations: 'car-configurator.model' }, */
 )
 

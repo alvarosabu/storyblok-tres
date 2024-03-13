@@ -24,18 +24,18 @@ onMounted(() => {
       class="modal-box bg-dark text-white"
     >
       <h3 class="font-bold text-lg">
-        {{ blok.title }}
+        {{ blok?.title }}
       </h3>
       <p class="py-4">
-        <RichTextRenderer :document="blok.content" />
+        <RichTextRenderer :document="blok?.content" />
       </p>
       <div class="modal-action">
         <!-- if there is a button in form, it will close the modal -->
         <NuxtLink
           class="btn btn-primary"
-          to="product-custom"
+          :to="blok?.ctaLink.cached_url"
         >
-          {{ blok.ctaLabel }}
+          {{ blok?.ctaLabel }}
         </NuxtLink>
       </div>
     </form>
